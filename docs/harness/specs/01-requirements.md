@@ -96,6 +96,7 @@
 | `run-tests` | 5. テスト | テストと結果 |
 | `ai-review` | 6. AI レビュー | レビュー結果 |
 | `commit-and-pr` | git 運用 | コミット、PR |
+| `setup-project` | 利用開始 | プロジェクト用の `README.md`、`PROJECT.md`(公開後に追加) |
 
 次の内容はスキルにしない。
 
