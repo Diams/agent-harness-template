@@ -12,6 +12,10 @@
 - 秘密情報をコミットしたり、ログや文書に書いたりしない。
 - 取り消しにくい操作と外部に公開される操作は、事前に確認する。
 
+## 初期設定
+
+利用者がプロジェクトの初期設定を依頼したら、`setup-project` スキルを使う。
+
 ## 開発プロセス
 
 詳細は [docs/harness/development-process.md](docs/harness/development-process.md) を読む。

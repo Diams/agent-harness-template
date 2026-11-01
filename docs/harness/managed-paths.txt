@@ -1,5 +1,6 @@
 AGENTS.md
 .claude/agents/ai-reviewer.md
+.claude/skills/setup-project
 .claude/skills/elicit-requirements
 .claude/skills/define-requirements
 .claude/skills/design-system

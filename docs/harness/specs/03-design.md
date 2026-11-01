@@ -27,7 +27,8 @@
 │       ├── implement/SKILL.md
 │       ├── run-tests/SKILL.md
 │       ├── ai-review/SKILL.md
-│       └── commit-and-pr/SKILL.md
+│       ├── commit-and-pr/SKILL.md
+│       └── setup-project/SKILL.md
 ├── .github/
 │   ├── agents/ai-reviewer.agent.md   [T] Copilot 用レビューエージェント
 │   └── pull_request_template.md      [T] PR テンプレート
@@ -84,6 +85,9 @@ description: <何をするか、いつ使うか>
 | `run-tests` | 受け入れ条件、`PROJECT.md` のコマンド | テストと結果 | 失敗時は `implement` に戻る。成功時は `commit-and-pr` へ進む |
 | `commit-and-pr` | 変更内容 | コミット、PR | `ai-review` へ進む |
 | `ai-review` | PR の差分、要件、設計 | PR 上のレビュー結果 | 重要な指摘があれば `implement` に戻る。なければ人間レビューを依頼して止まる |
+| `setup-project` | 利用者の回答、既存ファイル | `README.md`、`PROJECT.md`、PR | `commit-and-pr` を経て `ai-review` へ進む |
+
+`setup-project` の変更は `README.md` と `PROJECT.md` の記入だけでコードの動作を変えないため、区分を文書のみとする。工程 6、7 は省略しない。
 
 `<id>` は `YYYYMMDD-<topic>` とする。
 
@@ -144,7 +148,7 @@ ai-review スキル
 ### 利用開始
 
 1. `Use this template` でリポジトリを作成する。
-2. `PROJECT.md` と `README.md` を自分のプロジェクト用に書き換える。
+2. エージェントに初期設定を依頼し、`setup-project` で `README.md` と `PROJECT.md` を書き換える。GitHub Actions による自動置き換えは、権限が必要で失敗する場合があり、第 1 章の「生成処理を持たない」にも反するため採用しない。
 3. リポジトリの設定でブランチ保護を有効にする。
 
 ### 更新の取り込み

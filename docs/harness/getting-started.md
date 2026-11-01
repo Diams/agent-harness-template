@@ -11,10 +11,18 @@
 ## 手順
 
 1. GitHub で `Use this template` を選び、リポジトリを作成してクローンする。
-2. `PROJECT.md` と `README.md` を自分のプロジェクト用に書き換える。
+2. エージェントに「プロジェクトを初期設定して」と依頼する。`setup-project` スキルが質問に沿って `README.md` と `PROJECT.md` を書き換え、PR を作成するので、確認してマージする。手動で書き換えてもよい。
 3. 下記のブランチ保護を設定する。
 
 ハーネス自体をカスタマイズする場合や、テンプレートへ改善を提案する場合は、`Use this template` ではなくフォークを使う。
+
+## 関連文書
+
+- [テンプレートの更新を取り込む手順](updating.md)
+- [開発プロセス](development-process.md)
+- [git 運用](git-workflow.md)
+- [スキルの追加手順](adding-skills.md)
+- [権限とフックの参考情報](permissions-and-hooks.md)
 
 ## 既知の制約
 
