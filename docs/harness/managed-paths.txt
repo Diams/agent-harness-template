@@ -1,0 +1,12 @@
+AGENTS.md
+.claude/agents/ai-reviewer.md
+.claude/skills/elicit-requirements
+.claude/skills/define-requirements
+.claude/skills/design-system
+.claude/skills/implement
+.claude/skills/run-tests
+.claude/skills/ai-review
+.claude/skills/commit-and-pr
+.github/agents/ai-reviewer.agent.md
+.github/pull_request_template.md
+docs/harness
