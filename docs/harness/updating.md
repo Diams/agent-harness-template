@@ -3,7 +3,7 @@
 マージではなく、テンプレート管理のファイルだけをテンプレートの内容で置き換える。Git Bash、macOS や Linux のシェル、PowerShell で同じコマンドを使える。
 
 ```shell
-git remote add template https://github.com/<owner>/agent-harness-template.git  # 初回のみ
+git remote add template https://github.com/Diams/agent-harness-template.git  # 初回のみ
 git fetch template
 git switch -c chore/update-harness
 git show template/main:docs/harness/managed-paths.txt | git restore --source=template/main --staged --worktree --pathspec-from-file=-
