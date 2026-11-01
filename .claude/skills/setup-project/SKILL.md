@@ -9,7 +9,7 @@ description: テンプレートから作成したリポジトリの README.md �
 
 ## 手順
 
-1. `git remote -v` を確認する。`Diams/agent-harness-template` 本体であれば、作業せず止まって報告する。
+1. `git remote get-url origin` を確認する。`template` など他の remote は判定に使わない。`origin` が `Diams/agent-harness-template` 本体であれば、作業せず止まって報告する。`origin` のリポジトリ名が `agent-harness-template` のままの場合は、ハーネス自体のフォークの可能性があるため、続けてよいか利用者に確認する。
 2. `main` から `docs/setup-project` ブランチを作成する。区分は文書のみとする。
 3. `README.md` にテンプレートの案内以外の内容があれば、上書きしてよいか確認する。
 4. 既存のファイルから分かることを読み取り、不足する次の項目を利用者に質問する。不明な項目は推測せず、未定として残す。
@@ -33,8 +33,8 @@ description: テンプレートから作成したリポジトリの README.md �
 
 ## 完了条件
 
-`README.md` にテンプレートの案内が残っておらず、`PROJECT.md` にひな形の文言が残っていない。未定の項目は未定と明記されている。
+`README.md` にテンプレートの案内が残っておらず、`PROJECT.md` の括弧書きのひな形が残っていない。`PROJECT.md` 冒頭の説明文は残す。未定の項目は未定と明記されている。
 
 ## 次の工程
 
-PR のレビューを人間に依頼して止まる。`docs/harness/getting-started.md` のブランチ保護の設定がまだであれば、あわせて案内する。
+`ai-review` に進む。その後、人間にレビューを依頼するときに、`docs/harness/getting-started.md` のブランチ保護の設定がまだであれば、あわせて案内する。

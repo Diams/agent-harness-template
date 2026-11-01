@@ -16,6 +16,14 @@
 
 ハーネス自体をカスタマイズする場合や、テンプレートへ改善を提案する場合は、`Use this template` ではなくフォークを使う。
 
+## 関連文書
+
+- [テンプレートの更新を取り込む手順](updating.md)
+- [開発プロセス](development-process.md)
+- [git 運用](git-workflow.md)
+- [スキルの追加手順](adding-skills.md)
+- [権限とフックの参考情報](permissions-and-hooks.md)
+
 ## 既知の制約
 
 - VS Code の Local セッションでは、エージェント一覧に `ai-reviewer` が 2 個表示される場合がある。どちらを選んでも同じ観点でレビューする。

@@ -85,6 +85,9 @@ description: <何をするか、いつ使うか>
 | `run-tests` | 受け入れ条件、`PROJECT.md` のコマンド | テストと結果 | 失敗時は `implement` に戻る。成功時は `commit-and-pr` へ進む |
 | `commit-and-pr` | 変更内容 | コミット、PR | `ai-review` へ進む |
 | `ai-review` | PR の差分、要件、設計 | PR 上のレビュー結果 | 重要な指摘があれば `implement` に戻る。なければ人間レビューを依頼して止まる |
+| `setup-project` | 利用者の回答、既存ファイル | `README.md`、`PROJECT.md`、PR | `commit-and-pr` を経て `ai-review` へ進む |
+
+`setup-project` の変更は `README.md` と `PROJECT.md` の記入だけでコードの動作を変えないため、区分を文書のみとする。工程 6、7 は省略しない。
 
 `<id>` は `YYYYMMDD-<topic>` とする。
 
